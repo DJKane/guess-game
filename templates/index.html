@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <p>{{ message }}</p>
+    <p>Attempts: {{ attempts }}</p>
+
+    <form method="post">
+        <label for="guess">Your guess:</label>
+        <input type="number" id="guess" name="guess" min="1" max="20" required>
+        <button type="submit">Submit Guess</button>
+    </form>
+
+    <form method="post" style="margin-top: 10px;">
+        <button type="submit" name="restart" value="1">Start New Game</button>
+    </form>
+</body>
+</html>
